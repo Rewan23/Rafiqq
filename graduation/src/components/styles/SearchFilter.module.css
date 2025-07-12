@@ -1,0 +1,82 @@
+.container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  direction: rtl;
+}
+
+.filterWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  max-width: 1200px;
+  flex-direction: row-reverse; 
+}
+
+.searchBox {
+  position: relative;
+  width: 250px;
+}
+
+.searchBox input {
+  width: 100%;
+  padding: 10px 40px 10px 20px; 
+  border: none;
+  border-radius: 50px;
+  background-color: #f1f1f1;
+  font-size: 14px;
+}
+
+.iconSearch {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #888;
+  font-size: 14px;
+}
+
+
+.dropdownWrapper {
+  position: relative;
+}
+
+.dropdownWrapper button {
+  padding: 10px 20px;
+  border-radius: 50px;
+  background-color: #5a5aad;
+  color: white;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.iconArrow {
+  font-size: 12px;
+}
+
+.dropdown {
+  position: absolute;
+  top: 45px;
+  right: 0;
+  background: white;
+  border: 1px solid #ccc;
+  width: 180px;
+  list-style: none;
+  padding: 10px;
+  border-radius: 10px;
+  z-index: 10;
+}
+
+.dropdown li {
+  padding: 8px;
+  cursor: pointer;
+}
+
+.dropdown li:hover {
+  background-color: #eee;
+}

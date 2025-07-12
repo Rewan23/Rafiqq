@@ -1,0 +1,77 @@
+.footer {
+  background-color: #4456a5;
+  color: white;
+  padding: 0.4rem 2rem;
+  font-family: "Cairo", sans-serif;
+  direction: rtl;
+}
+
+.sections {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  min-width: 180px;
+}
+
+.column h4 {
+  font-size: 1.1rem;
+  color: #e2e8f0;
+}
+
+.column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0.8rem;
+}
+
+.column li {
+  font-size: 0.8rem;
+  margin-bottom: 0.4rem;
+  cursor: pointer;
+}
+
+.column p {
+  margin-bottom: 0.5rem;
+  font-size: 0.8rem;
+}
+
+.iconLine {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+}
+
+.socialIcons {
+  display: flex;
+  flex-direction: row;
+  gap: 0.6rem;
+  font-size: 1rem;
+  margin-top: 0.8rem;
+}
+
+.storeButtons {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin-top: 0.5rem;
+}
+
+.storeButtons img {
+  width: 140px;
+  height: auto;
+}
+
+.bottom {
+  text-align: center;
+  font-size: 0.8rem;
+  color: #e2e8f0;
+  border-top: 1px solid #3b4a91;
+}

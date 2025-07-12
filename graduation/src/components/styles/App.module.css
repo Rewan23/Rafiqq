@@ -1,0 +1,38 @@
+.app {
+  font-family: 'Cairo', sans-serif;
+  direction: rtl;
+  text-align: right;
+  background-color: #f9f9f9;
+}
+
+
+.heroSection {
+  height: 800px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: white;
+}
+
+.heroOverlay {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px 30px;
+  border-radius: 12px;
+  max-width: 380px;
+  text-align: right;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.heroOverlay h1 {
+  font-size: 32px;
+  color: #2a2a6a;
+  margin: 0;
+  font-weight: bold;
+}
+
+.heroOverlay p {
+  font-size: 16px;
+  color: #333;
+  margin-top: 8px;
+}

@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Alexandria&display=swap");
+
+* {
+  font-family: "Alexandria", sans-serif;
+  font-weight: 400;
+  font-size: 23px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #ffffff59;
+  padding: 8px 4px;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  position: sticky;
+  top: 0;
+  margin: -50px;
+}
+
+.icons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  width: 59px;
+  padding: 5px 0;
+}
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-container .text {
+  transition: transform 0.8s ease-in-out, opacity 1s ease-in-out;
+  color: var(--main-color);
+  opacity: 0.5;
+  margin-left: -50px;
+}
+.icons {
+  transition: transform 0.8s ease-in-out, opacity 1s ease-in-out;
+  opacity: 1;
+  will-change: transform;
+}
+
+.icons.move {
+  transform: translateX(-25px);
+}
+.text.move {
+  opacity: 1;
+  transform: translateX(25px);
+}
+
+.fade-in {
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+}
+
+.fade-out {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+.toggle-menu {
+  color: var(--main-color);
+  position: absolute;
+  right: 30px;
+}
+@media (min-width: 768px) {
+  .nav .toggle-menu {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .nav .link ul,
+  .btn {
+    display: none;
+  }
+  .nav .link.show ul,
+  .btn.show {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 4%;
+    width: 40%;
+    margin: 2px auto;
+    background-color: var(--main-color);
+    color: white;
+    border-radius: 16px;
+  }
+  .link.show ul li {
+    border-bottom: 1px solid var(--main-color);
+    padding: 10px;
+  }
+}
+.link ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  direction: rtl;
+  color: var(--main-color);
+  padding: 0;
+  margin: 0;
+}
+
+.link ul li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.link ul li a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,77 @@
+
+.doctorsSection {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.sectionTitle {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 12px; 
+  padding: 0;
+}
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+.card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 12px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  width: 100%; 
+  height: 100%; 
+  box-sizing: border-box;
+}
+.image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.name {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.specialty {
+  font-size: 16px;
+  color: #666;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 24px;
+  direction: rtl;
+  margin-bottom: 40px; 
+}
+
+.pageNumber {
+  background-color: #4456A5;
+  color: white;
+  padding: 6px 16px;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.arrowIcon {
+  font-size: 20px;
+  color: #4456A5;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
